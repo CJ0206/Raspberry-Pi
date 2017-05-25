@@ -58,7 +58,7 @@ Next you will need to create the shutdown scrypt, first open the editor:
 sudo nano shutdown.py
 
 ```
-Next paste the [shutdown.py](shutdown.py) scrypt into the file. Press Ctrl + C, Y, and enter to save the scrypt.
+Next paste the [shutdown.py](/scripts/shutdown.py) scrypt into the file. Press Ctrl + C, Y, and enter to save the scrypt.
 
 #### Step 3
 Next we want to run the file at start up by running 
