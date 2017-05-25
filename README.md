@@ -34,7 +34,7 @@ I changed hdmi_mode=5 to force 1080, you can change the resolution by referring 
 This code will safely power down your Raspberry Pi using a momentary switch.
 
 #### Required Hardware
-* Raspberry Pi (I am using the origional model B)
+* [Rasberry Pi B v1.2](https://www.amazon.co.uk/Raspberry-Pi-Model-512MB-RAM/dp/B008PT4GGC)
 * [Momentary Switch](https://www.amazon.co.uk/dp/B016YIYAH0/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=1VFE04IJ9AZ9T&coliid=I1Q0O4MYQDCNC2)
 
 #### Prepairing Hardware
