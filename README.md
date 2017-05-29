@@ -121,3 +121,11 @@ The second file will run through the relays turning them on and off one by one, 
 
 #### [RelayTest3.py](/scripts/4%20Channel%20Relay/RelayTest3.py)
 The last file will turn the relays on and off together, to exit the program hold 'Ctrl + C'
+
+
+---
+## [Install rpi-monitor with wifi stats](Install%20rpi-monitor%20to%20show%20wifi%20stats.md)
+
+
+---
+## [Install dump1090-multability fork](Install%20dump1090-multability%20fork.md)
