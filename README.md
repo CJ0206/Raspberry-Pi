@@ -1,5 +1,5 @@
 # Raspberry Pi
-Just some of the code I have written for my Raspberry Pi.
+Just some of the code I have written or installed for my Raspberry Pi.
 
 ---
 ## [Force HDMI on the Raspberry Pi](/boot/config.txt)
