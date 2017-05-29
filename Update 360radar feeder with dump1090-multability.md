@@ -27,3 +27,5 @@ To install [dump1090-multability](Install%20dump1090-multability%20fork.md)
 To edit the web interface of dump1090-multability, including location/range rings:
 
     sudo nano /usr/share/dump1090-mutability/html/config.js
+
+My file is [here](/usr/share/dump1090-mutability/html/config.js) with location removed.
