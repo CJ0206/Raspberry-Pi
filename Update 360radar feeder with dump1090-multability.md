@@ -22,3 +22,8 @@ To install [360Radar](http://radar.lowflyingwales.co.uk/installing-and-using-a-d
 To install [FR24](https://forum.flightradar24.com/threads/8908-New-Flightradar24-feeding-software-for-Raspberry-Pie?p=66479#post66479)
 
 To install [dump1090-multability](Install%20dump1090-multability%20fork.md)
+
+---
+To edit the web interface of dump1090-multability, including location/range rings:
+
+    sudo nano /usr/share/dump1090-mutability/html/config.js
