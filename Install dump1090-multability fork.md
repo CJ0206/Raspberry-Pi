@@ -13,6 +13,10 @@ Configure dump1090-multability:
 
     sudo dpkg-reconfigure dump1090-mutability
 
+When promplted remove the IP and hit enter:
+
+    127.0.0.1
+
 Additional arguements:
 
     --quiet --net --net-ro-size 500 --net-ro-rate 5 --net-beast --mlat --no-fix --modeac
