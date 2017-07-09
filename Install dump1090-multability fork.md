@@ -2,8 +2,8 @@
 
 Add dump1090-multability into repository list:
 
-    wget https://github.com/mutability/mutability-repo/releases/download/v0.1.1/mutability-repo_0.1.1_armhf.deb
-    sudo dpkg -i mutability-repo_0.1.1_armhf.deb
+    wget https://github.com/mutability/dump1090/releases/download/v1.14/dump1090-mutability_1.14_armhf.deb
+    sudo dpkg -i dump1090-mutability_1.14_armhf.deb
 
 Update and install required packages:
 
