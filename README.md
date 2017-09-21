@@ -41,6 +41,19 @@ I changed hdmi_mode=5 to force 1080, you can change the resolution by referring 
 
 
 ---
+## [Add voice shutdown and reboot to AIY](aiyprojects-raspbian/src/action.py)
+Update the code in the link above using:
+```
+sudo nano ~/voice-recognizer-raspi/src/action.py
+
+```
+Restart the voice recogniser service:
+```
+sudo systemctl restart voice-recognizer.service
+
+```
+
+---
 ## [Powering down a RaspberryPi using a momentary switch](/scripts/shutdown.py)
 
 This code will safely power down your Raspberry Pi using a momentary switch.
