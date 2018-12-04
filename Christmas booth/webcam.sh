@@ -4,7 +4,7 @@
 DATE=$(date +"%Y-%m-%d_%H%M")
 
 # Take photo 1280 x 720
-fswebcam -r 1280x720 -D 5 --no-banner --overlay christmas.png /home/pi/webcam/$DATE.jpg
+fswebcam -r 1280x720 -D 5 --no-banner --overlay christmas.png /home/pi/webcam/$DATE.jpg -S 2
 
 # Display photo
 gpicview /home/pi/webcam/$DATE.jpg
