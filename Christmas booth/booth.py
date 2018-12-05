@@ -5,8 +5,11 @@ import sleep
 import subprocess
 import os
 
+# Set date format
+DATE=$(date +"%Y-%m-%d_%H%M")
+
 # Display Christmas image 
-os.system ('feh --hide-pointer -x -q -B black -g 1280x800 "/home/pi/myscripts/christmas.gif" &')
+os.system ('feh --hide-pointer -x -q -B black -g 1280x800 "/home/pi/myscripts/christmas.jpg" &')
 
 # Use physical pin numbers (NOT GPIO NUMBERS)
 GPIO.setmode(GPIO.BOARD)  
@@ -14,7 +17,14 @@ GPIO.setmode(GPIO.BOARD)
 # When pin 26 is low run
 def onButton(channel):
     if channel == 26:
-        os.system("/home/pi/myscripts/webcam.sh")
+        # Take a photo
+        os.system('fswebcam -r 1280x720 -D 5 --no-banner --overlay christmas.png /home/pi/webcam/$DATE.jpg -S 2')
+        # View photo
+        os.system('gpicview /home/pi/webcam/$DATE.jpg')
+        # Wait 5 seconds
+        time.sleep(5)
+        # Close photo
+        os.system('pkill -f gpicview')
 
 # Setup pin 26 as input with internal pull-up resistor to hold it HIGH until pressed 
 GPIO.setmode(GPIO.BCM)
