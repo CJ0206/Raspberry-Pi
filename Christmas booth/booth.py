@@ -9,7 +9,7 @@ import os
 DATE=$(date +"%Y-%m-%d_%H%M")
 
 # Display Christmas image 
-os.system ('feh --hide-pointer -x -q -B black -g 1280x800 "/home/pi/myscripts/christmas.jpg" &')
+os.system ('feh --hide-pointer -x -q -B black -g 1280x800 "/home/pi/christmas.jpg" &')
 
 # Use physical pin numbers (NOT GPIO NUMBERS)
 GPIO.setmode(GPIO.BOARD)  
