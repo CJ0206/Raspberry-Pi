@@ -147,3 +147,16 @@ The second file will run through the relays turning them on and off one by one, 
 #### [RelayTest3.py](/scripts/4%20Channel%20Relay/RelayTest3.py)
 The last file will turn the relays on and off together, to exit the program hold 'Ctrl + C'
 
+## Disable screen sleep
+Edit lightdm
+```
+sudo nano /etc/lightdm/lightdm.conf
+```
+Look for the line starts “xserver-command” and modify as below:
+```
+xserver-command=X -s 0 -dpms
+```
+Reboot the system.
+```
+sudo reboot
+```
