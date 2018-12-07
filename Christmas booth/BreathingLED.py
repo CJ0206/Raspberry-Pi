@@ -2,7 +2,9 @@
 import RPi.GPIO as GPIO
 import time
 
-LedPin = 12
+GPIO.setwarnings(False)
+
+LedPin = 10
 
 GPIO.setmode(GPIO.BOARD)       # Numbers pins by physical location
 GPIO.setup(LedPin, GPIO.OUT)   # Set pin mode as output
