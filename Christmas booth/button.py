@@ -14,6 +14,3 @@ while True:
 	if input_state == True:
         	os.system('fswebcam -r 1280x720 -D 5 --no-banner --overlay christmas.png /home/pi/webcam/%d-%m-%Y_%H:%M:%S.jpg -S 2')
         	time.sleep(5)
-
-message = input("Press enter to quit") # Run until someone presses enter
-GPIO.cleanup() # Clean up
