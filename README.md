@@ -1,5 +1,5 @@
 # Raspberry Pi
-Just some of the code I have written or installed for my Raspberry Pi.
+Just some useful codes and some I have written or installed for my Raspberry Pi.
 
 ---
 ## [Force HDMI on the Raspberry Pi](/boot/config.txt)
@@ -26,32 +26,6 @@ hdmi_drive=2
 ```
 
 I changed hdmi_mode=5 to force 1080, you can change the resolution by referring to the documentation at [RaspberryPi.org](https://www.raspberrypi.org/documentation/configuration/config-txt/video.md)
-
-
----
-## [Install rpi-monitor with wifi stats](Install%20rpi-monitor%20to%20show%20wifi%20stats.md)
-
-
----
-## [Install dump1090-multability fork](Install%20dump1090-multability%20fork.md)
-
-
----
-## [Update/Install 360Radar, FR24 and drump1090-multability](Update%20360radar%20feeder%20with%20dump1090-multability.md)
-
-
----
-## [Add voice shutdown and reboot to AIY](aiyprojects-raspbian/src/action.py)
-Update the code in the link above using:
-```
-sudo nano ~/voice-recognizer-raspi/src/action.py
-
-```
-Restart the voice recogniser service:
-```
-sudo systemctl restart voice-recognizer.service
-
-```
 
 ---
 ## [Powering down a RaspberryPi using a momentary switch](/scripts/shutdown.py)
@@ -160,3 +134,45 @@ Reboot the system.
 ```
 sudo reboot
 ```
+
+
+---
+## [Add voice shutdown and reboot to AIY](aiyprojects-raspbian/src/action.py)
+Update the code in the link above using:
+```
+sudo nano ~/voice-recognizer-raspi/src/action.py
+
+```
+Restart the voice recogniser service:
+```
+sudo systemctl restart voice-recognizer.service
+
+```
+
+---
+## Display GPIO pins
+To see the pin out of your Raspberry Pi
+```
+pinout
+
+```
+By default, if stdout is a console that supports color, ANSI codes will be used to produce color output. Output can be forced to be monochrome:
+```
+pinout --monochrome
+```
+To manually specify the revision of Pi you want to query, use ```--revision```. To find the revision code you need you can [click here](https://elinux.org/RPi_HardwareHistory):
+```
+pinout -r 000d
+```
+
+---
+## [Install rpi-monitor with wifi stats](Install%20rpi-monitor%20to%20show%20wifi%20stats.md)
+
+
+---
+## [Install dump1090-multability fork](Install%20dump1090-multability%20fork.md)
+
+
+---
+## [Update/Install 360Radar, FR24 and drump1090-multability](Update%20360radar%20feeder%20with%20dump1090-multability.md)
+
