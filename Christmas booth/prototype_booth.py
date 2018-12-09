@@ -9,7 +9,7 @@ def take_photo():
     os.system('fswebcam -r 640x480 -D 5 --no-banner --overlay christmas.png /home/pi/webcam/%d-%m-%Y_%H:%M:%S.jpg -S 2')
     time.sleep(5)
  
-# Define LED and Button Pins | Type "pinout" into the terminal to find your pin numbers
+# Define LED and Button pins | Type "pinout" into the terminal to find your pin numbers
 led = PWMLED(15)
 button = Button(7)
 
