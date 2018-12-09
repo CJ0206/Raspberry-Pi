@@ -9,7 +9,7 @@ Install public key to trust RPi-Monitor repository:
 Update and install RPi-Monitor:
 
     sudo apt-get update
-    sudo apt-get install rpimonitor
+    sudo apt-get install -y rpimonitor
 
 Upgrade RPi-Monitor:
 
