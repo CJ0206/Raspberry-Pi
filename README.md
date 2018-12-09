@@ -166,6 +166,13 @@ pinout -r 000d
 ```
 
 ---
+## Clear terminal history
+To clear the terminal history:
+```
+history -c
+```
+
+---
 ## [Install rpi-monitor with wifi stats](Install%20rpi-monitor%20to%20show%20wifi%20stats.md)
 
 
