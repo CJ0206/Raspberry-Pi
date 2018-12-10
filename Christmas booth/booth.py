@@ -7,7 +7,28 @@ import time
 
 # Define take photo
 def take_photo():
-        os.system('fswebcam -r 640x480 -D 5 --no-banner --overlay christmas.png /home/pi/webcam/%d-%m-%Y_%H:%M:%S.jpg -S 2')
+        os.system("echo '\n\n\n\n\n\nWe will take your photo in'")
+        time.sleep(2)
+        os.system('clear')
+        os.system("echo '\n\n\n\n\n\n5'")
+        time.sleep(1)
+        os.system('clear')
+        os.system("echo '\n\n\n\n\n\n4'")
+        time.sleep(1)
+        os.system('clear')
+        os.system("echo '\n\n\n\n\n\n3'")
+        time.sleep(1)
+        os.system('clear')
+        os.system("echo '\n\n\n\n\n\n2'")
+        time.sleep(1)
+        os.system('clear')
+        os.system("echo '\n\n\n\n\n\n1'")
+        time.sleep(1)
+        os.system('clear')
+        os.system("echo '\n\n\n\n\n\nSmile!'")
+        time.sleep(1)
+        os.system('fswebcam -r 640x480 --no-banner --overlay christmas.png /home/pi/webcam/%d-%m-%Y_%H:%M:%S.jpg -S 2')
+        os.system('clear')
         os.system("echo '\n\n\n\n\n\n\033[1mYour photo has been saved!\n\033[00mYour photo will be available from \033[1m WEBSITE \033[00m tonight.")
         time.sleep(10)
         os.system('clear')
@@ -19,7 +40,7 @@ button = Button(7)
 
 # Instructions
 os.system('clear')
-os.system("echo '\033[1mPush button to take photograp\033[00m'")
+os.system("echo '\n\n\n\n\n\n\033[1mPush button to take photograp\033[00m'")
 
 # Pulse LED and take photo when Button is pressed
 led.pulse()
