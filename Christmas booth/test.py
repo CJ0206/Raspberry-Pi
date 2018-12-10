@@ -21,7 +21,6 @@ def take_photo():
         latest_file = max(list_of_files, key=os.path.getctime)
         img = Image.open(latest_file)
         img.show()
-        time.sleep(10)
         
         #Exit message
         os.system("echo '\n\n\n\n\n\n\033[1mYour photo has been saved!\n\033[00mYour photo will be available from \033[1m WEBSITE \033[00m tonight.")
