@@ -2,35 +2,38 @@
 from gpiozero import PWMLED
 from gpiozero import Button
 from signal import pause
+from PIL import Image
+import glob
 import os
 import time
 
 # Define take photo
 def take_photo():
-        os.system("echo '\n\n\n\n\n\nWe will take your photo in'")
-        time.sleep(2)
-        os.system('clear')
-        os.system("echo '\n\n\n\n\n\n5'")
-        time.sleep(1)
-        os.system('clear')
-        os.system("echo '\n\n\n\n\n\n4'")
-        time.sleep(1)
-        os.system('clear')
-        os.system("echo '\n\n\n\n\n\n3'")
-        time.sleep(1)
-        os.system('clear')
-        os.system("echo '\n\n\n\n\n\n2'")
-        time.sleep(1)
-        os.system('clear')
-        os.system("echo '\n\n\n\n\n\n1'")
-        time.sleep(1)
-        os.system('clear')
-        os.system("echo '\n\n\n\n\n\nSmile!'")
-        time.sleep(1)
+        os.system("echo 'We will take your photo in'")
+        
+        #Countdown
+        count = 5
+        while count != 0:
+                print(count)
+                sleep(1)
+                os.system("clear")
+                count -= 1
+                
+        #Take Photo
         os.system('fswebcam -r 640x480 --no-banner --overlay christmas.png /home/pi/webcam/%d-%m-%Y_%H:%M:%S.jpg -S 2')
         os.system('clear')
-        os.system("echo '\n\n\n\n\n\n\033[1mYour photo has been saved!\n\033[00mYour photo will be available from \033[1m WEBSITE \033[00m tonight.")
+        
+        #Open image
+        list_of_files = glob.glob('/path/to/folder/*.jpg')
+        latest_file = max(list_of_files, key=os.path.getctime)
+        img = Image.open(latest_file)
+        img.show()
+        
+        #Exit message
+        os.system("echo '\033[1mYour photo has been saved!\n\033[00mYour photo will be available from \033[1m WEBSITE \033[00m tonight.")
         time.sleep(10)
+        
+        #Reset
         os.system('clear')
         os.system("echo '\033[1mPush button to take photograph\033[00m'")
 
@@ -40,7 +43,7 @@ button = Button(7)
 
 # Instructions
 os.system('clear')
-os.system("echo '\n\n\n\n\n\n\033[1mPush button to take photograp\033[00m'")
+os.system("echo '\033[1mPush button to take photograp\033[00m'")
 
 # Pulse LED and take photo when Button is pressed
 led.pulse()
