@@ -24,7 +24,7 @@ def take_photo():
         os.system('clear')
         
         #Open image
-        list_of_files = glob.glob('/path/to/folder/*.jpg')
+        list_of_files = glob.glob('/home/pi/webcam/*.jpg')
         latest_file = max(list_of_files, key=os.path.getctime)
         img = Image.open(latest_file)
         img.show()
