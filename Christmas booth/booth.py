@@ -2,10 +2,10 @@
 from gpiozero import PWMLED
 from gpiozero import Button
 from signal import pause
+from time import sleep
 from PIL import Image
 import glob
 import os
-from time import sleep
 
 # Define take photo
 def take_photo():
