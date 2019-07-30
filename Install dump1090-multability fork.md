@@ -1,13 +1,9 @@
-### Instructions on how to install [dump1090-multability fork](https://github.com/mutability/dump1090)
+### Instructions on how to install [dump1090-multability fork](https://forum.flightradar24.com/threads/10232-How-to-Install-dump1090-mutability_1-15-dev-on-RPi)
 
-Add dump1090-multability into repository list:
-
-    wget https://github.com/mutability/dump1090/releases/download/v1.14/dump1090-mutability_1.14_armhf.deb
-    sudo dpkg -i dump1090-mutability_1.14_armhf.deb
 
 Update and install required packages:
 
-    sudo apt-get update && sudo apt-get install dump1090-mutability
+    sudo bash -c "$(wget -O - https://raw.githubusercontent.com/abcd567a/dump1090/master/install_dump1090_mut_1.15.sh)"
 
 Configure dump1090-multability:
 
@@ -21,23 +17,12 @@ Additional arguements:
 
     --quiet --net --net-ro-size 500 --net-ro-rate 5 --net-beast --mlat --no-fix --modeac
 
-Install webserver integration
 
-    sudo apt-get install lighttpd && sudo lighty-enable-mod dump1090
+Bug fix:
 
-As the key to install dump1090-multability is out of date I removed it to stop getting the error messages every time I update.
-
-Remove outdated key:
-
-    sudo apt-key del 1495751596
+    sudo wget -O /etc/udev/rules.d/rtl-sdr.rules "https://raw.githubusercontent.com/osmocom/rtl-sdr/master/rtl-sdr.rules" 
     
-Remove dump1090-multability from the repository list:
-
-    sudo rm -r /etc/apt/sources.list.d/mutability.list
-    sudo apt-get clean
-    sudo apt-get autoclean
-    sudo apt-get remove
-    sudo apt-get autoremove
+    sudo reboot
 
 Update the system:
 
