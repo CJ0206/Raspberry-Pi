@@ -1,7 +1,7 @@
-Remove the old files replacing * with your server connection file, and follow the instructions on [low flying wales](https://radar.lowflyingwales.co.uk/installing-the-mlat-client-on-a-raspberry-pi/) to install the new feeder:
+Remove the old files replacing *360r-mlat-test-svr2* with your server connection file you are using, and follow the instructions on [low flying wales](https://radar.lowflyingwales.co.uk/installing-the-mlat-client-on-a-raspberry-pi/) to install the new feeder:
 
     cd /etc/default/
-    sudo rm -r *360r-mlat-test-svr2
+    sudo rm -r 360r-mlat-test-svr2
        
 Update FR24 position:
 
