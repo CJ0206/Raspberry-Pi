@@ -6,6 +6,9 @@ Remove the old files replacing *360r-mlat-test-svr2* with your server connection
 Update FR24 position:
 
     fr24feed --signup
+For other FR24 settings:
+
+    http://raspberrypi.local:8754/
 
 Update position in dump1090-multability:
 
