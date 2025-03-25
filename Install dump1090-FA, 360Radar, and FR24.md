@@ -1,6 +1,5 @@
 # Instructions on how to install [dump1090-fa](https://uk.flightaware.com/adsb/piaware/install)
 
-
 Ensure that you have the latest OS updates before you install FlightAware packages.:
 ```
 sudo apt update
@@ -44,9 +43,11 @@ sudo reboot
 You should wait about four or five minutes for your PiAware to start and then you can associate your FlightAware account with your PiAware device to receive all the benefits.
 [https://uk.flightaware.com/adsb/piaware/claim](https://uk.flightaware.com/adsb/piaware/claim)
 
-# Install [360 Radar](http://radar.lowflyingwales.co.uk/installing-and-using-a-dvb-t-dongle-on-a-raspberry-pi/)
+---
+# Instructions on how to install [360 Radar](http://radar.lowflyingwales.co.uk/installing-and-using-a-dvb-t-dongle-on-a-raspberry-pi/)
 
-# Install [FR24](https://forum.flightradar24.com/forum/radar-forums/flightradar24-feeding-data-to-flightradar24/8950-new-flightradar24-feeding-software-for-raspberry-pie?8908-New-Flightradar24-feeding-software-for-Raspberry-Pie=#post66479)
+---
+# Instructions on how to install [FR24](https://forum.flightradar24.com/forum/radar-forums/flightradar24-feeding-data-to-flightradar24/8950-new-flightradar24-feeding-software-for-raspberry-pie?8908-New-Flightradar24-feeding-software-for-Raspberry-Pie=#post66479)
 
 The recommended way to install the decoder software is through our APT repository in order to simplify future update process.
 
