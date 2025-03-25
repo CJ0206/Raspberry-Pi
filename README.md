@@ -177,7 +177,7 @@ history -c
 
 
 ---
-## [Install dump1090-multability fork](Install%20dump1090-multability%20fork.md)
+## [Install dump1090-FA, 360Radar, and FR24](Install%20dump1090-FA,%20360Radar,%20and%20FR24.md)
 
 
 ---
