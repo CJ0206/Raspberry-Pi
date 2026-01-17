@@ -180,12 +180,10 @@ history -c
 ## [Install dump1090-FA, 360Radar, and FR24](Install%20dump1090-FA,%20360Radar,%20and%20FR24.md)
 
 ---
-## [DSI Screen brighness toggle](/scripts/Screen%20brightness%20toggle.md)
-
-
----
 ## [Update/Install 360Radar, FR24 and drump1090-multability](Update%20360radar%20feeder%20with%20dump1090-multability.md)
 
+---
+## [Raspberry Pi DSI Backlight Control](/scripts/Screen%20brightness%20toggle.md)
 Automated & Manual Brightness Scheduling (Debian Trixie)
 
 This project provides scripts and systemd timers to automatically turn a DSI‑connected display **off at night** and **on in the morning**, plus manual toggle scripts and optional shell shortcuts.
