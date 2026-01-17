@@ -9,7 +9,7 @@ Designed for Raspberry Pi OS (Debian Trixie) using a DSI panel exposed at:
 /sys/class/backlight/10-0045/brightness
 ```
 
-YYou can check if your controls are the same by running:
+You can check if your controls are the same by running:
 
 ```
 ls /sys/class/backlight
